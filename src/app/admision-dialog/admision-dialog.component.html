@@ -1,0 +1,65 @@
+<div class="col-12" >
+<p>ข้อมูลนักเรียน</p>
+<mat-form-field  >
+    <input matInput placeholder="เบอร์ติดต่อ" [(ngModel)]="student.telno">
+  </mat-form-field>
+&nbsp;
+  <mat-form-field  >
+    <input matInput placeholder="เลขบัตรประชาชน" [(ngModel)]="student.pid">
+  </mat-form-field>
+&nbsp;
+  <mat-form-field >
+    <input matInput placeholder="ชื่อ-สกุล" [(ngModel)]="student.fullname" >
+  </mat-form-field>
+  &nbsp;
+  <mat-form-field >
+    <input matInput placeholder="เพศ" >
+  </mat-form-field>
+  &nbsp;
+  <mat-form-field >
+    <input matInput placeholder="วัน/เดือน/ปีเกิด" >
+  </mat-form-field>
+  &nbsp;
+  <mat-form-field >
+    <input matInput placeholder="สถานที่เกิด" >
+  </mat-form-field>
+  &nbsp;
+  <mat-form-field >
+    <input matInput placeholder="เป็นบุตรลำดับที่" >
+  </mat-form-field>
+  &nbsp;
+  <mat-form-field >
+    <input matInput placeholder="ผู้ทำคลอด">
+  </mat-form-field>
+  &nbsp;
+  <mat-form-field >
+    <input matInput placeholder="น้ำหนักแรกเกิด" >
+  </mat-form-field>
+  &nbsp;
+  &nbsp;
+  <p>บิดา</p>
+  <mat-form-field >
+    <input matInput placeholder="ชื่อ-สกุลบิดา" >
+  </mat-form-field>
+  &nbsp;
+  <mat-form-field >
+    <input matInput placeholder="เลขบัตรประชาชน" >
+  </mat-form-field>
+  &nbsp;
+  &nbsp;
+  <p>มารดา</p>
+  <mat-form-field >
+    <input matInput placeholder="ชื่อ-สกุลมารดา">
+  </mat-form-field>
+  &nbsp;
+  <mat-form-field >
+    <input matInput placeholder="เลขบัตรประชาชน">
+  </mat-form-field>
+</div>
+<div class="col-12" style="text-align: center">
+  <button mat-flat-button color="warn" (click)="close()" >ยกเลิก</button>
+  &nbsp;
+  <button mat-flat-button color="primary" (click)="closeonclick()">บันทึก</button>
+</div>
+
+

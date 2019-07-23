@@ -1,0 +1,25 @@
+<h1>รายชื่อนักเรียน</h1>
+
+<div style="margin: center;" *ngIf="students.length === 0">
+  <button  (click)="openDialog()" mat-flat-button color="primary">+ เพิ่มข้อมูลนักเรียน</button>
+</div>
+
+
+<div class="row" *ngIf="students.length > 0">
+  <div class="col-12">
+      <button  (click)="openDialog()" mat-flat-button color="primary">+ เพิ่มข้อมูลนักเรียน</button>
+  </div>
+  <table>
+    <thead>
+      <th>ชื่อ-สกุล</th>
+      <th>เลขประชาชน</th>
+      <th>เบอร์ติดต่อ</th>
+    </thead>
+
+  <tr *ngFor="let students of students">
+    <td>{{students.fullname}}</td>
+    <td>{{students.pid}}</td>
+    <td>{{students.telno}}</td>
+  </tr>
+</table>
+</div>
